@@ -14,30 +14,33 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. Regression-Suite Migration at ACI Worldwide (Automation and delivery)
+**S:** Legacy TAF CI/CD pipelines supported regression coverage for real-time payment applications.
+**T:** Help migrate eight regression suites, each with 1,000+ test cases, to a Maven-based Jenkins automation framework.
+**A:** Worked with the automated testing framework and contributed to the migration of suites and their CI/CD execution.
+**R:** The suites were moved to the Maven and Jenkins framework, creating a stronger foundation for automated regression testing.
+**Use for:** "Tell me about a migration", "How have you improved automation?"
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Payment-Flow Defect Investigation at ACI Worldwide (Debugging)
+**S:** Automated test failures and payment-processing flow defects affected real-time payment applications.
+**T:** Support analysis and stabilization of transaction flows within the Agile engineering team.
+**A:** Used transaction analysis, data validation, Groovy, XML, Oracle Database, and PostgreSQL while participating in defect triage and maintenance.
+**R:** Helped reduce automated test failure rates to below 1%.
+**Use for:** "Tell me about a difficult bug", "How do you debug a backend workflow?"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Pharma Intelligence and Regulatory RAG Engine (Applied AI evaluation)
+**S:** Medicine and regulatory information requires retrieval that is grounded in the right source record.
+**T:** Build a retrieval system that could surface relevant records reliably.
+**A:** Combined dense vector search with sparse full-text search using Reciprocal Rank Fusion, then added multi-query expansion and reranking. Built the service with FastAPI and Supabase pgvector.
+**R:** Indexed 5,647 records and selected the expected record in 44 of 45 evaluated lookups.
+**Use for:** "Describe an AI project", "How did you evaluate quality?"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. Full-Stack Fraud Detection System (System design)
+**S:** Insurance claims can contain anomalous relationships that are difficult to capture with isolated records.
+**T:** Design an end-to-end anomaly-detection system around graph structure.
+**A:** Used a pre-trained Graph Autoencoder to represent claim relationships, served the pipeline through FastAPI, and built a React/Vite and Tailwind dashboard for visualization.
+**R:** The service ran in 200-350 ms and provided a usable interface for inspecting structural similarities.
+**Use for:** "Walk me through a system you designed", "How have you worked with ML systems?"
 
 ## Common Tough Questions
 

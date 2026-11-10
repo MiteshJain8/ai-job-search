@@ -1,5 +1,16 @@
 # Search Queries for Job Scraper
 
+## Save every search to Notion
+
+User instruction: store searched results in Notion after every job-search run.
+- Database: https://app.notion.com/p/41c4e0fd96334efe9fd746bd9c7507d6
+- Data source: collection://06f04a51-bf8f-4138-9366-1040d4741550
+- Fetch the schema and query existing rows before writing. Match by normalized Job URL or employer requisition ID; update existing matches rather than duplicating them.
+- Store presented opportunities with company, role, location, source URL, experience requirement, search-relative rank, actual last-check date, fit notes, gaps, and shift caveats. Do not fabricate scores or dates.
+- Preserve user-maintained application statuses. Record rank context in content when updating ranks from another search. Do not mark a role Applied merely because it was saved.
+- Continue local scrape-state deduplication and storage as defined by the canonical scraper workflow; Notion supplements it.
+- Report the Notion link and saved/updated counts. If syncing fails, report it explicitly and keep local results available for retry.
+
 <!-- SETUP: Customize these queries based on your skills, target roles, and location -->
 
 ## Installed portal CLIs (primary for `/scrape`)
@@ -13,10 +24,10 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 ## Search Sites
 
 Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+- **naukri.com** - India general job board
+- **linkedin.com/jobs** - LinkedIn job listings (filter: India / Bengaluru); also covered by `linkedin-search` CLI
+- **wellfound.com/jobs** - startup roles (optional)
+- **instahyre.com** - India technical roles (optional)
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -27,34 +38,34 @@ Queries are grouped by priority. Write **each category in every language from yo
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Equal-priority entry-level engineering tracks
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+Backend, applied AI, full-stack, and DevOps/platform roles are equally ranked.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:naukri.com "backend engineer" Bengaluru
+site:naukri.com "software engineer" Bengaluru
+site:naukri.com "applied ai engineer" India
+site:linkedin.com/jobs "software engineer" India
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Backend and applied-AI systems
 
-Adjacent roles you could pivot into.
+These match the strongest documented technical evidence.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:naukri.com "python fastapi" Bengaluru OR India
+site:naukri.com "java backend" India
+site:linkedin.com/jobs "rag engineer" Bengaluru India
+```
+
+### Priority 3: Full-stack and platform engineering
+
+Adjacent roles supported by the documented project and internship experience.
+
+```
+site:naukri.com "full stack developer" React Bengaluru
+site:naukri.com "devops engineer" Docker India
 ```
 
 ### Priority 4: Broader Technical / Consulting
@@ -62,19 +73,19 @@ site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
 Wider net for general technical roles.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:naukri.com "graduate engineer trainee" Bengaluru
+site:linkedin.com/jobs "junior software engineer" India
+site:naukri.com "software developer" Bengaluru
 ```
 
 ## Location Filter
 
 When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+- Bengaluru and surrounding areas
+- Remote roles based in India
+- India-wide roles
+- International relocation (open, assess visa eligibility before applying)
+- Night-shift work (exclude)
 
 ## Language Filter
 

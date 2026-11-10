@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python, Java, SQL, APIs, FastAPI, Docker, Kubernetes, Jenkins, CI/CD, backend workflows, RAG, vector databases
+**Moderate match areas:** React, Next.js, Express, Node.js, GNN-based systems, AWS, observability tooling
+**Weak match areas:** Senior-level ownership, production ML platform experience beyond the documented projects, and technologies not evidenced in the candidate profile
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Internship-level backend and quality-engineering work in real-time payments; hands-on backend and applied-AI projects
+**Moderate:** Platform engineering, DevOps, full-stack engineering, and ML engineering roles where project evidence is accepted
+**Entry-level:** Software engineer, backend engineer, applied-AI engineer, and platform/DevOps-adjacent roles
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +107,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Start in an entry-level software, backend, or applied-AI engineering role
+- Build deeper production experience in backend systems, data workflows, and applied AI
+- Keep platform and DevOps-adjacent roles in scope when they involve meaningful software delivery
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Technically challenging work that teaches new things
+- Tasks that drain: Not specified; do not infer
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Salary baseline not specified
+- **Flexibility**: Bengaluru first, then remote, then India-wide; open to relocation. Night shifts are a deal-breaker.
+- **Professional development**: Equal interest in backend, applied AI, full-stack, and DevOps/platform work; prioritize roles with meaningful new learning.
 
 ### 6. Salary Benchmark (Optional)
 

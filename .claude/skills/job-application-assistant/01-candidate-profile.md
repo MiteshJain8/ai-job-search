@@ -4,18 +4,17 @@ framework_version: 1.1.1
 
 # Candidate Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all sections will be filled with your actual information -->
+<!-- Profile is populated from candidate-provided materials. Confirm unknown constraints before relying on them. -->
 
 ## Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_ADDRESS]
-- **Phone:** [YOUR_PHONE]
-- **Email:** [YOUR_EMAIL]
-- **LinkedIn:** [YOUR_LINKEDIN_URL]
-- **GitHub:** [YOUR_GITHUB_URL]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **Constraints:** [YOUR_COMMUTE_OR_LOCATION_CONSTRAINTS]
+- **Name:** Mitesh Jain
+- **Location:** Bengaluru, India
+- **Phone:** +91 6361332898
+- **Email:** miteshjain2808@gmail.com
+- **LinkedIn:** https://linkedin.com/in/MiteshJain8
+- **GitHub:** https://github.com/MiteshJain8
+- **Status:** Open to work and actively seeking opportunities
+- **Constraints:** Bengaluru first, then remote, then India-wide; open to relocation. Night-shift work is a deal-breaker.
 
 ### Languages
 <!-- Every language you can work in professionally, with your honest level. Used by the
@@ -25,49 +24,52 @@ a hard no, not a gap to smooth over. -->
 
 | Language | Level | Notes |
 |----------|-------|-------|
-| [LANGUAGE] | [LEVEL, e.g. "Native" / "C2" / "B1/B2 (conversational)"] | [optional] |
+| English | Fluent | Professional working language |
+| Kannada | Native | |
+| Marathi | Fluent | |
+| Hindi | Fluent | |
 
 ## Education
 
 | Degree | Period | Institution | Key Topics |
 |--------|--------|-------------|------------|
-| [DEGREE] | [YEARS] | [INSTITUTION] | [TOPICS] |
+| B.E. in Computer Science and Engineering | 2022-2026 | M.S. Ramaiah Institute of Technology, Bengaluru | System design, data structures and algorithms, OOP, operating systems, DBMS, computer networks, microservices, SDLC |
 
 ## Professional Experience
 
-### [JOB_TITLE] - [COMPANY] ([START] - [END])
-[LOCATION]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_1]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_2]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_3]
-
-<!-- Add more roles as needed -->
+### Software Engineering Intern, Real-Time Payments - ACI Worldwide (Jan 2026 - Jul 2026)
+- Migrated 8 regression suites, each with 1,000+ test cases, from legacy TAF CI/CD pipelines to a Maven-based Jenkins automation framework.
+- Maintained payment applications across CI HUB scheme, RPP gateway and connector, CI HUB PayNet, and CI HUB API Adapter.
+- Diagnosed payment-processing flow defects through transaction analysis, reducing automated test failure rates to below 1%.
+- Supported sprint delivery, code reviews, defect triage, data validation, and code maintenance using Groovy, XML, Oracle Database, and PostgreSQL.
 
 ## Independent Projects
-<!-- Projects outside of employment: freelance, open source, personal -->
-- **[PROJECT_NAME]**: [DESCRIPTION]
+- **Pharma Intelligence and Regulatory RAG Engine:** Built a hybrid dense and sparse retrieval system with Reciprocal Rank Fusion over 5,647 embedded medicine and regulatory records. Implemented query expansion and reranking; selected the expected record in 44 of 45 evaluated lookups. Stack: FastAPI, Supabase pgvector. https://github.com/MiteshJain8/rag-pharmacy
+- **Automated Job Discovery and Resume-JD Matching Pipeline:** Built an n8n pipeline using Apify, Ollama, JavaScript, and Google Sheets to deduplicate job listings and score up to 20 job descriptions per run against a structured resume. https://github.com/MiteshJain8/jobsearch-n8n-flow
+- **Full-Stack Fraud Detection System:** Built a Graph Autoencoder-based anomaly-detection pipeline for insurance claims, served through FastAPI with a React/Vite and Tailwind dashboard. The service ran in 200-350 ms. https://github.com/MiteshJain8/fraud-detection-gnn
+- **Peer Evaluation App:** Built a microservices-oriented evaluation platform with Next.js, Express.js, MongoDB, Docker Compose, GitHub Actions, Jest, Codacy, Prometheus, and Grafana. https://github.com/Haksham/peer-evaluation
 
 ## Technical Skills
 
-### Programming & ML
-- **[LANGUAGE]** ([PROFICIENCY]): [FRAMEWORKS_AND_LIBRARIES]
-- [OTHER_SKILLS]
+### Programming and ML
+- **Programming:** Python, Java, JavaScript, TypeScript, Groovy, C, C++, SQL, NoSQL
+- **Backend and AI:** FastAPI, REST APIs, RAG, vector databases, GNNs, n8n
+- **Web:** React, Next.js, Express, Node.js, React Native, Tailwind CSS
 
 ### Domain Expertise
-- [DOMAIN_1]
-- [DOMAIN_2]
+- Real-time payments and transaction workflows
+- Backend engineering, test automation, CI/CD, and database-backed systems
+- Applied AI retrieval systems and graph-based anomaly detection
 
 ### Software & Tools
-- [TOOL_LIST]
+- Docker, Kubernetes, Jenkins, Maven, GitHub Actions, Oracle Database, PostgreSQL, MongoDB, Supabase pgvector, Postman, Prometheus, Grafana, AWS
 
 ## Publications
-<!-- List peer-reviewed publications, if any -->
-1. [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL]. [DOI_LINK]
+No publications supplied.
 
 ## Awards
-- [AWARD] - [EVENT] ([YEAR])
+- LeetCode Knight: 600+ solved problems, peak contest rating 1907 across 35+ rated contests (2024-present)
+- Hackathon Finalist, Coding Club MSRIT: top-5 placement among 200+ participants (2024)
 
 ## References
-- [NAME], [TITLE], [COMPANY] ([EMAIL], [PHONE])
-
-More references available upon request.
+To confirm.

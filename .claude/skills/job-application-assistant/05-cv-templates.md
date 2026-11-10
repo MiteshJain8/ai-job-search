@@ -137,11 +137,14 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For entry-level backend and software engineering roles:**
+> Computer Science graduate with real-time payments internship experience at ACI Worldwide and hands-on backend delivery using Python, Java, SQL, FastAPI, APIs, Docker, Kubernetes, and CI/CD tooling. Migrated eight regression suites of 1,000+ test cases each into a Maven and Jenkins framework, and built production-oriented retrieval and anomaly-detection projects. Seeking an entry-level role focused on reliable backend systems and measurable engineering outcomes.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For applied-AI engineering roles:**
+> Computer Science graduate with enterprise backend experience and hands-on applied-AI project delivery. Built a hybrid RAG system over 5,647 medicine and regulatory records, with query expansion, reranking, and a 44/45 expected-record result on its evaluation set. Brings Python, FastAPI, SQL, vector retrieval, Docker, and Kubernetes, with a practical focus on grounded, deployable AI systems.
+
+**For platform, DevOps, and CI/CD-adjacent roles:**
+> Computer Science graduate with experience migrating legacy regression suites to a Maven and Jenkins automation framework for real-time payment applications. Brings Docker, Kubernetes, GitHub Actions, Jenkins, SQL, backend APIs, and observability exposure through Prometheus and Grafana. Seeking an entry-level platform-oriented role that combines automation, reliable delivery, and backend engineering.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

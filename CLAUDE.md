@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Mitesh Jain
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Mitesh Jain, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,70 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Mitesh Jain
+- **Location:** Bengaluru, India (Bengaluru first, then remote, then India-wide; open to relocation)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
+  | English | Fluent |
+  | Kannada | Native |
+  | Marathi | Fluent |
+  | Hindi | Fluent |
   <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
   working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
   undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
   lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Open to work and actively seeking opportunities
+- **LinkedIn headline:** "Entry-Level Software and Applied AI Engineer | Backend, RAG, CI/CD"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **B.E. in Computer Science and Engineering** (2022-2026) - M.S. Ramaiah Institute of Technology, Bengaluru
+  - Topics: system design, data structures and algorithms, OOP, operating systems, DBMS, computer networks, microservices, and SDLC
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Software Engineering Intern, Real-Time Payments** (Jan 2026 - Jul 2026) - **ACI Worldwide**
+  - Migrated 8 regression suites of 1,000+ test cases each from legacy TAF CI/CD pipelines to a Maven-based Jenkins framework.
+  - Investigated payment-processing flows and helped reduce automated test failure rates to below 1%.
+  - Used Groovy, XML, Oracle Database, PostgreSQL, and Agile delivery practices.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python, Java, SQL, FastAPI, REST APIs, Docker, Kubernetes, Jenkins, CI/CD, RAG, vector databases
+- **Secondary:** JavaScript, TypeScript, React, Next.js, Express, Node.js, GNNs, n8n, AWS
+- **Domain:** real-time payments, backend engineering, test automation, applied AI retrieval, graph-based anomaly detection
+- **Software:** Maven, GitHub Actions, Oracle Database, PostgreSQL, MongoDB, Supabase pgvector, Postman, Prometheus, Grafana
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+No certifications supplied.
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+No publications supplied.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- LeetCode Knight - 600+ solved problems; peak contest rating 1907 across 35+ rated contests (2024-present)
+- Hackathon Finalist - Coding Club MSRIT, top-5 among 200+ participants (2024)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Formal assessment:** Not supplied
+- **Strengths:** Technical problem-solving and structured debugging are evidenced by the resume.
+- **Growth areas:** To be developed through interview practice; do not infer a personality weakness.
+- **Thrives in:** Technically challenging work that teaches new things.
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Technically challenging work that teaches new things
+- Building reliable backend, applied-AI, full-stack, or platform systems
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Software product and services companies: entry-level backend, full-stack, and platform roles
+- Applied-AI and data-driven product teams: entry-level applied-AI roles
 
 ### Deal-breakers
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Night-shift work
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

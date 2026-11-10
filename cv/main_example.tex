@@ -1,190 +1,88 @@
-%% Example CV - [YOUR_NAME]
-%% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
-%%
-%% SETUP: Run /setup to populate this with your actual information.
+%% Mitesh Jain - master CV reference
 %% Compile with: lualatex main_example.tex
-%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
-
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
-
-% Force the name and section headings to render in moderncv blue (color1).
-% Default banking leaves them black: moderncvstylebanking.sty's \colorlet
-% copies (not aliases) the pre-scheme accent colour, so the name colours are
-% frozen before \moderncvcolor runs. Re-let them after. \namefont is the hook
-% every name-style macro routes through, so this also works on moderncv 2.3.1
-% (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
 \renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
 \colorlet{firstnamecolor}{color1}
 \colorlet{lastnamecolor}{color1}
 \colorlet{namecolor}{color1}
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
-
 \usepackage[utf8]{inputenc}
-% pdflatex fallback only (the documented engine is lualatex, which skips this
-% branch). Without T1 font encoding pdflatex builds accented letters with
-% \accent, and the PDF text layer stores them decomposed - `e` + U+0300 rather
-% than U+00E8 - so an ATS keyword match on "Genève" fails while the page looks
-% right. moderncv 2.5 loads T1 itself under pdflatex; 2.3.1 (Debian/Ubuntu apt)
-% does not. \ifpdftex comes from iftex, which every moderncv version loads.
 \ifpdftex\usepackage[T1]{fontenc}\fi
-% moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
-% must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
-% \usepackage{hyperref} clashes with the class's own
-% \RequirePackage[unicode]{hyperref}. From 2.4.0 the class passes its options
-% through \PassOptionsToPackage instead, which is what removes that clash.
-\AtEndPreamble{\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
-    % Keep pdfpagemode=UseNone: this block runs after moderncv's own
-    % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
-    % value here would win and open every CV in fullscreen presentation mode.
-    pdfpagemode=UseNone,
-}}
+\AtEndPreamble{\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=blue,pdftitle={Mitesh Jain - CV},pdfpagemode=UseNone}}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
-% personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Mitesh}{Jain}
+\address{Bengaluru, India}{}{}
+\phone[mobile]{+91~6361332898}
+\email{miteshjain2808@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/MiteshJain8}{LinkedIn}, \href{https://github.com/MiteshJain8}{GitHub}}
 
 \begin{document}
-
 \makecvtitle
 
-% ============================================================
-%     PROFILE STATEMENT
-% ============================================================
-
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
-
-% ============================================================
-%     CORE COMPETENCIES
-% ============================================================
+\small{Computer Science graduate with real-time payments internship experience at ACI Worldwide and hands-on work across backend engineering, applied AI, and CI/CD automation. Built systems using Python, Java, SQL, FastAPI, Docker, Kubernetes, Jenkins, RAG, and vector databases. Open to entry-level backend, applied-AI, full-stack, and platform engineering roles.}
 
 \section{Core Competencies}
 \vspace{1pt}
 \begin{itemize}
-
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
-
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
-
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
-
+\item \textbf{Backend Engineering}: Python, Java, SQL, FastAPI, REST APIs, PostgreSQL, Oracle Database, MongoDB.
+\item \textbf{Applied AI}: RAG, dense and sparse retrieval, Reciprocal Rank Fusion, vector databases, GNNs.
+\item \textbf{Delivery and Automation}: Jenkins, Maven, GitHub Actions, Docker, Kubernetes, CI/CD, test automation.
+\item \textbf{Full-Stack}: JavaScript, TypeScript, React, Next.js, Express, Node.js, Tailwind CSS.
+\item \textbf{Tools}: Git, Supabase pgvector, n8n, Postman, Prometheus, Grafana, AWS.
 \end{itemize}
-
-% ============================================================
-%     PROFESSIONAL EXPERIENCE
-% ============================================================
 
 \section{Professional Experience}
 \vspace{3pt}
 \begin{itemize}
-
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jan 2026--Jul 2026}{Software Engineering Intern, Real-Time Payments}{ACI Worldwide}{}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+\item {Migrated 8 regression suites, each with 1,000+ test cases, from legacy TAF CI/CD pipelines to a Maven-based Jenkins automated testing framework.}
+\item {Maintained payment applications across CI HUB scheme, RPP gateway and connector, CI HUB PayNet, and CI HUB API Adapter.}
+\item {Investigated payment-processing flow defects through transaction analysis, helping reduce automated test failure rates to below 1\%.}
+\item {Supported Agile delivery, code reviews, defect triage, data validation, and maintenance using Groovy, XML, Oracle Database, and PostgreSQL.}
 \end{itemize}}}
-
-\vspace{3pt}
-
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-\end{itemize}}}
-
 \end{itemize}
 
-% ============================================================
-%     EDUCATION
-% ============================================================
+\section{Selected Projects}
+\vspace{1pt}
+\begin{itemize}
+\item{\cventry{2026}{Pharma Intelligence and Regulatory RAG Engine}{FastAPI, Supabase pgvector}{}{}{\vspace{1pt}
+Built a hybrid dense and sparse retrieval system with Reciprocal Rank Fusion over 5,647 embedded medicine and regulatory records. Added query expansion and reranking; selected the expected record in 44 of 45 evaluated lookups. \href{https://github.com/MiteshJain8/rag-pharmacy}{GitHub}}}
+\item{\cventry{2026}{Automated Job Discovery and Resume-JD Matching Pipeline}{n8n, Apify, Ollama, JavaScript}{}{}{\vspace{1pt}
+Built a pipeline to deduplicate job listings and score up to 20 job descriptions per run against a structured resume, with results written to Google Sheets. \href{https://github.com/MiteshJain8/jobsearch-n8n-flow}{GitHub}}}
+\item{\cventry{2025}{Full-Stack Fraud Detection System}{FastAPI, React, GNN}{}{}{\vspace{1pt}
+Built a Graph Autoencoder-based anomaly-detection pipeline for insurance claims, served via FastAPI in 200--350 ms with a React/Vite and Tailwind dashboard. \href{https://github.com/MiteshJain8/fraud-detection-gnn}{GitHub}}}
+\item{\cventry{2025}{Peer Evaluation App}{Next.js, Express.js, MongoDB, Docker Compose}{}{}{\vspace{1pt}
+Built a microservices-oriented evaluation platform with GitHub Actions, Jest, Codacy, Prometheus, and Grafana. \href{https://github.com/Haksham/peer-evaluation}{GitHub}}}
+\end{itemize}
 
 \section{Education}
 \vspace{1pt}
 \begin{itemize}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
-
+\item{\cventry{2022--2026}{B.E. in Computer Science and Engineering}{M.S. Ramaiah Institute of Technology}{Bengaluru, India}{CGPA: 8.6/10}{Relevant topics: system design, data structures and algorithms, OOP, operating systems, DBMS, computer networks, microservices, and SDLC.}}
 \end{itemize}
-
-% ============================================================
-%     LANGUAGES
-% ============================================================
 
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {Kannada (native), English (fluent), Marathi (fluent), Hindi (fluent).}
 \end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {\textbf{LeetCode Knight}: 600+ solved problems; peak contest rating of 1907 across 35+ rated contests (2024--present).}
+\item {\textbf{Hackathon Finalist}: Coding Club MSRIT, top-5 placement among 200+ participants (2024).}
 \end{itemize}
-
-% ============================================================
-%     REFERENCES
-% ============================================================
 
 \section{References}
 \vspace{1pt}
 \begin{itemize}
-\item{Available upon request.}
+\item {Available upon request.}
 \end{itemize}
-
 \end{document}
